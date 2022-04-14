@@ -57,11 +57,49 @@
     </header>
     <main>
     <!--empieza el centro de pagina de preparaciones, tarjetas-p son las preparaciones-->
-        <section class="centroDePagina-1">
+        <!--<section class="centroDePagina-1">
             <div class="tarjeta0">
                 <p>"Gastroenterologia por gastroenterologos, seguridad y calidad al servicio del paciente"</p>
-            </div>
-            <div class="tarjeta1">
+            </div>-->
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Consideracion comunes a las endoscopias digestivas
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Preparacion para endoscopia digestiva ALTA
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Preparacion para COLONOSCOPIA
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            <!--<div class="tarjeta1">
                 <div class="imagen-preparacion"></div>
                 <div class="texto-preparacion">
                     <h4>CONSIDERACIONES COMUNES PARA LAS ENDOSCOPIAS ALTAS Y BAJAS</h4>
@@ -85,7 +123,7 @@
                     <button>saber mas...</button>
                 </div>
             </div>
-        </section>
+        </section>-->
     <section class="contenido__flex">
         <ul class="nav justify-content-center">
             <li class="nav-item"><a class="nav-link" href="#">Preguntas frecuentes</a></li>
@@ -125,10 +163,12 @@
         </ul>
     </div>
     <footer>
-        <div class="footer__leyenda">
-            <h4> I.M.E.G.- INSTITUTO MODELO DE ENDOSCOPIA Y GASTROENTEROLOGIA</BR>Gastroenterologia por Gastroenterologos<br>Seguridad y calidad al servicio del Paciente<br>TODOS LOS DERECHOS RESERVADOS. 2022<BR> </h4>
-        </div>  
-        
-    </footer>   
+        <div class="container-fluid">
+            <div class="footer__leyenda">
+                <h5> I.M.E.G.- INSTITUTO MODELO DE ENDOSCOPIA Y GASTROENTEROLOGIA<br>Gastroenterologia por Gastroenterologos<br>TODOS LOS DERECHOS RESERVADOS. 2022<BR> </h5>
+            </div> 
+        </div>
+    </footer>
+    <script src="../libreria.boostrap/js/bootstrap.min.js"></script>
 </body>
 </html>
