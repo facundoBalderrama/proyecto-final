@@ -21,12 +21,10 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);
   display: grid;
   grid-template-columns: repeat 8, 1fr;
-  /*grid-template-rows: repeat (6, 1fr); */
 }
 
 .header__logo {
   grid-column: 1/3;
-  /*grid-row: 1 / 4;*/
 }
 
 .header__instituto {
@@ -46,9 +44,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
   text-align: center;
   color: rgb(5, 19, 5);
-  border-radius: 4px;
-  border-bottom: #14665F 2px solid;
-  border-right: #14665F 1px solid;
 }
 
 .body {
@@ -68,6 +63,30 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .centroDePagina-1 {
   display: grid;
   grid-column: 2;
+}
+
+.cont-endoscopia {
+  background-color: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.card-endoscopia {
+  background-color: #eaf3f1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+.bordes-detalles, .header__logo, .header__nav li, .card-endoscopia {
+  padding: 5px;
+  text-align: center;
+  border-radius: 4px;
+  border-bottom: #14665F 4px solid;
+  border-right: #14665F 2px solid;
+  margin-bottom: 5px;
 }
 
 .tarjeta0 {
@@ -93,11 +112,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   border-bottom: #14665F 5px solid;
   border-right: #14665F 3px solid;
   margin-bottom: 10px;
-}
-
-iframe {
-  height: 50vh;
-  width: 70vw;
 }
 
 .servicios li {
