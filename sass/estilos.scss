@@ -3,8 +3,11 @@ $color-fondo: #def2f4;
 $color-cuadros: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);
 $color-botones: #DBDEDD; 
 $color-contenido: #eaf3f1 ;
+$color-gradiente: linear-gradient(to right #14665F 0%, #2E9990 50%, #DBDEDD 100%);
 //$bordes-redondeados: 4px; border-bottom: #14665F 2px solid; border-right:#14665F 1px solid;//
 //me parece que no va asi//
+$letra-card: 1.1em;
+$letra-texto: 0.9em;
 
 
 *{
@@ -48,6 +51,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     padding-left: 10%;
 }
 .header__nav li{
+    font-size: $letra-card;
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     text-align:center;
     color:rgb(5, 19, 5);
@@ -59,6 +63,22 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .body{
     background-color: $color-fondo;
 }
+.animate-background{
+    background: linear-gradient (to right #14665F 0%, #2E9990 50%, #DBDEDD 100% );
+    background-size: 400% 400%;
+    animation: animate-background 10s infinite ease-in-out;
+}
+@keyframes animate-background {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
 .main{
     width: 100%;
     height:auto;
@@ -67,35 +87,52 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     grid-template-columns:20% 70% 10%;
     grid-template-rows: 20% 60% 20%;
 }
-
+.slider-indice{
+    grid-column: 2;
+    grid-row: 2;
+}
 /*prueba de css a las tarjetas de contenido*/
 .centroDePagina-1{
     display: grid;   
     grid-column: 2 
 }
 .cont-endoscopia{
-    background-color: $color-cuadros;
+    background-color: $color-gradiente;
     display: flex;
-    margin: 10px;
-    padding: 10px;
+    margin: 2em;
+    padding: 2em;
     justify-content: space-around;
 }    
 .card-endoscopia{
-    background-color: $color-contenido;
+    font-size: $letra-card;
+    background-color: $color-gradiente;
     flex-direction: row;
     flex-wrap: wrap;
     width: 45%;
     @extend .bordes-detalles;
+    h5{
+        font-size: $letra-card;
+    }
+    p{
+        font-size: $letra-texto;
+    }
+    padding: 15px;
 }
 //prueba de bordes y detalles @extended//
 .bordes-detalles{
-    padding: 5px;
     text-align: center;
     border-radius: 4px;
     border-bottom:#14665F  4px solid;
     border-right:#14665F 2px solid;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
+.zoom {
+    transition: transform .2s; 
+}
+.zoom:hover {
+    transform: scale(1.1); 
+}
+
 .tarjeta0{
     margin-top: 5px;
     margin-left: 5px;
@@ -111,13 +148,11 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .tarjeta1,
 .tarjeta2,
 .tarjeta3{
-    margin-left: 10px;
-    width: 100%;
-    border: 1px solid #14665F;
-    border-radius: 5px;
-    border-bottom:#14665F  5px solid;
-    border-right:#14665F 3px solid;
-    margin-bottom: 10px;
+    padding: 15px;
+    margin: 1rem;
+    @extend .bordes-detalles;
+    font-size: $letra-card;
+    font-size: $letra-texto;
 }
 .servicios li{
     margin: 3px;
@@ -234,20 +269,12 @@ footer{
         grid-template-columns: 87% 13%;
         grid-template-rows:60% 30% 10%;
     }
-    .minimenu{
-        grid-row: 3;
-        grid-column: 1 / 2;
-        display: flex;
-        width: 100%;
-        height: 30px;
+    .cont-endoscopia{
+        display: inline;
     }
-    .minimenu__lista li{
-        font-size: 14px;
-        display: inline-block;
-        list-style: none;
-        padding: 5px;
-        margin:5px;
-    }
+    .card-endoscopia{
+        width: 95%; 
+    }       
     .centroDePagina-1{
         grid-column: 1;
     }
@@ -280,20 +307,12 @@ footer{
         grid-template-columns: 87% 13%;
         grid-template-rows:60% 30% 10%;
     }
-    .minimenu{
-        grid-row: 3;
-        grid-column: 1 / 2;
-        display: flex;
-        width: 100%;
-        height: 30px;
-    }
-    .minimenu__lista li{
-        font-size: 14px;
-        display: inline-block;
-        list-style: none;
-        padding: 5px;
-        margin:5px;
-    }
+    .cont-endoscopia{
+        display: inline;
+    } 
+    .card-endoscopia{
+        width: 95%; 
+    }          
     .centroDePagina-1{
         grid-column: 1;
     }

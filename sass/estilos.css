@@ -41,6 +41,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 }
 
 .header__nav li {
+  font-size: 1.1em;
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
   text-align: center;
   color: rgb(5, 19, 5);
@@ -50,6 +51,36 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   background-color: #def2f4;
 }
 
+.animate-background {
+  background: linear-gradient to right #14665F 0%, #2E9990 50%, #DBDEDD 100%;
+  background-size: 400% 400%;
+  -webkit-animation: animate-background 10s infinite ease-in-out;
+          animation: animate-background 10s infinite ease-in-out;
+}
+
+@-webkit-keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 .main {
   width: 100%;
   height: auto;
@@ -59,6 +90,11 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   grid-template-rows: 20% 60% 20%;
 }
 
+.slider-indice {
+  grid-column: 2;
+  grid-row: 2;
+}
+
 /*prueba de css a las tarjetas de contenido*/
 .centroDePagina-1 {
   display: grid;
@@ -66,27 +102,44 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 }
 
 .cont-endoscopia {
-  background-color: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);
+  background-color: linear-gradient(to right #14665F 0%, #2E9990 50%, #DBDEDD 100%);
   display: flex;
-  margin: 10px;
-  padding: 10px;
+  margin: 2em;
+  padding: 2em;
   justify-content: space-around;
 }
 
 .card-endoscopia {
-  background-color: #eaf3f1;
+  font-size: 1.1em;
+  background-color: linear-gradient(to right #14665F 0%, #2E9990 50%, #DBDEDD 100%);
   flex-direction: row;
   flex-wrap: wrap;
   width: 45%;
+  padding: 15px;
+}
+.card-endoscopia h5 {
+  font-size: 1.1em;
+}
+.card-endoscopia p {
+  font-size: 0.9em;
 }
 
-.bordes-detalles, .header__logo, .header__nav li, .card-endoscopia {
-  padding: 5px;
+.bordes-detalles, .tarjeta1,
+.tarjeta2,
+.tarjeta3, .header__logo, .header__nav li, .card-endoscopia {
   text-align: center;
   border-radius: 4px;
   border-bottom: #14665F 4px solid;
   border-right: #14665F 2px solid;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
+}
+
+.zoom {
+  transition: transform 0.2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
 }
 
 .tarjeta0 {
@@ -105,13 +158,10 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .tarjeta1,
 .tarjeta2,
 .tarjeta3 {
-  margin-left: 10px;
-  width: 100%;
-  border: 1px solid #14665F;
-  border-radius: 5px;
-  border-bottom: #14665F 5px solid;
-  border-right: #14665F 3px solid;
-  margin-bottom: 10px;
+  padding: 15px;
+  margin: 1rem;
+  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .servicios li {
@@ -245,20 +295,12 @@ footer {
     grid-template-rows: 60% 30% 10%;
   }
 
-  .minimenu {
-    grid-row: 3;
-    grid-column: 1/2;
-    display: flex;
-    width: 100%;
-    height: 30px;
+  .cont-endoscopia {
+    display: inline;
   }
 
-  .minimenu__lista li {
-    font-size: 14px;
-    display: inline-block;
-    list-style: none;
-    padding: 5px;
-    margin: 5px;
+  .card-endoscopia {
+    width: 95%;
   }
 
   .centroDePagina-1 {
@@ -298,20 +340,12 @@ footer {
     grid-template-rows: 60% 30% 10%;
   }
 
-  .minimenu {
-    grid-row: 3;
-    grid-column: 1/2;
-    display: flex;
-    width: 100%;
-    height: 30px;
+  .cont-endoscopia {
+    display: inline;
   }
 
-  .minimenu__lista li {
-    font-size: 14px;
-    display: inline-block;
-    list-style: none;
-    padding: 5px;
-    margin: 5px;
+  .card-endoscopia {
+    width: 95%;
   }
 
   .centroDePagina-1 {

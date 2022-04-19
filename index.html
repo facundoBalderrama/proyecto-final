@@ -7,13 +7,13 @@
     <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
     <title>I.M.E.G.</title>
     <link rel="stylesheet" href="./libreria.boostrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/estilos.css"> 
+    <link rel="stylesheet" href="./sass/estilos.css"> 
     <link rel="stylesheet" href="./css/media-query.css">
     
 </head>
-<body>
+<body class="container-fluid">
     <header class="header">
-        <img class="header__logo" src="./assets/logo3.jpg" alt="logo" width="200"/>
+        <img class="header__logo" src="./assets/logo3.jpg" alt="logo" width="200" />
         <div class="header__instituto" ><h3>Instituto Modelo de Endoscopia y Gastroenterologia</h3>
         </div>
         <div class="header__nav">
@@ -65,21 +65,21 @@
             </div>
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./assets/endoscopista1.jpg" class="d-block w-100" alt="endoscopista">
+                <img src="./assets/slider3.jpg" class="d-block w-100" alt="endoscopista">
                 <div class="carousel-caption d-none d-md-block">
                 <h5>IMEG</h5>
                 <p>Especialistas gastroenterologos conformando un equipo serio y respondable</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/ecografista1.jpg" class="d-block w-100" alt="ecografista">
+                <img src="./assets/ecografista-foto-rubia.jpg" class="d-block w-100" alt="ecografista">
                 <div class="carousel-caption d-none d-md-block">
                 <h5>IMEG</h5>
                 <p>Diagnostico por imagenes Ecograficas con equipos de ultima tecnologia</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./assets/endoscopista2.jpg" class="d-block w-100" alt="endoscopista">
+                <img src="./assets/endoscopia-foto4.jpg" class="d-block w-100" alt="endoscopista">
                 <div class="carousel-caption d-none d-md-block">
                 <h5>IMEG</h5>
                 <p>Endoscopias digestivas altas y bajas, con la mayor calidad y aplicada</p>
@@ -95,45 +95,27 @@
             <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
-            <!-- aca empiezo la prueba de las tarjetas de contenido-->
             <section class="centroDePagina-1">
-                <div class="tarjeta0">
-                    <p>"Gastroenterologia por gastroenterologos, seguridad y calidad al servicio del paciente"</p>
-                </div>
                 <div class="tarjeta1">
-                    <div class="imagen-gastroenterologos1"><img src="./assets/imagen1.jpg" width="250px"></div>
-                    <div class="texto-gastroenterologos1">
-                        <h4>ESPECIALISTAS EN GASTROENTEROLOGIA</h4>
-                        <p>Un gastroenterólogo es un médico con capacitación y experiencia dedicadas en el manejo de enfermedades del tracto gastrointestinal y el hígado.               La capacitación en gastroenterología es un programa intenso y riguroso, donde los futuros gastroenterólogos aprenden y desarrollan una comprensión detallada de las enfermedades gastrointestinales.</p>
-                        <button>saber mas..</button>
+                    <div class="IMEG-inicio">
+                        <h5>IMEG-Instituto Modelo de Endoscopia y Gastroenterologia</h5>
+                        <p  class="zoom">El IMEG funciona como tal desde septiembre del 2020, conformado por especialistas gastroenterolos acompañados por un equipo de profesionales medicos y licenciados con el proposito de brindar un servicio de calidad con los mas altos estadares de seguridad a los pacientes. <br>Con gastroenterologos trabajando en equipo,acompañados por psicologos, nutricionistas, cardiologos etc, se busca la excelenci en atencion integral de las mas diversas patologias gastroenteologicas </p>
                     </div>
                 </div>
                 <div class="tarjeta2">
-                    <div class="imagen-endo-alta"><img src="./assets/imagen2.jpg" width="250px"></div>
                     <div class="texto-endo-alta">
-                        <h4>ENDOSCOPIA DIGESTIVA ALTA</h4>
-                        <p>Es la exploración del esófago, el estómago y el duodeno a través de la boca, mediante un endoscopio. Este es un instrumento flexible en forma de tubo, terminado en una lente y una cámara. Las imágenes se transfieren a un monitor para ser analizadas o almacenadas. Permite detectar enfermedades de esos órganos, tomar muestras y aplicar tratamientos.</p>
-                        <button>saber mas..</button>
+                        <h5>GASTROENTEROLOGO</h5>
+                        <p  class="zoom">Un gastroenterólogo es un médico con capacitación y experiencia dedicadas en el manejo de enfermedades del tracto gastrointestinal y el hígado.               La capacitación en gastroenterología es un programa intenso y riguroso, donde los futuros gastroenterólogos aprenden y desarrollan una comprensión detallada de las enfermedades gastrointestinales.</p>
                     </div>
                 </div>
                 <div class="tarjeta3">
-                    <div class="imagen-colono"><img src="./assets/colono1.jpg" width="350px"></div>
                     <div class="texto-colono">
-                        <h4>VIDEOCOLONOSCOPIA</h4>
-                        <p>Es una técnica de imagen que nos sirve para explorar el interior del intestino
-                                grueso (colon, sigma y recto), introduciendo por el ano un tubo flexible y delgado
-                                denominado endoscopio que en su extremo tiene una cámara.
-                                Se indica cuando existen síntomas que hacen sospechar enfermedades que afectan al
-                                intestino grueso, como son: alternancia entre estreñimiento y diarrea, diarrea
-                                persistente, dolor abdominal persistente, heces con sangre.
-                                Permite no sólo ver las lesiones sino también obtener biopsias (muestras de tejido) y
-                                realizar tratamientos locales.
-                                </p>
-                        <button>saber mas..</button>
+                        <h5></h5>
+                        <p></p>
                     </div>
                 </div>
             </section> 
-        </div>
+    </main>
         <section class="contenido__flex">
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link" href="#">Preguntas frecuentes</a></li>
@@ -143,7 +125,6 @@
                 <li class="nav-item"><a class="nav-link" href="#">Balon gastrico</a></li>
             </ul>
         </section> 
-    </main>
     <div class="menuRedes">
         <ul class="menuRedes-list">
             <li>
