@@ -35,7 +35,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 }
 .header__logo{
     grid-column: 1 / 3;
-    @extend .bordes-detalles;
+    /*@extend .bordes-detalles1;*/
 }
 .header__instituto{
     grid-column: 5 / 8;
@@ -55,7 +55,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     text-align:center;
     color:rgb(5, 19, 5);
-    @extend .bordes-detalles;
+    /*@extend .bordes-detalles1;*/
     //border-radius: 4px;
     //border-bottom:#14665F  2px solid;
     //border-right:#14665F 1px solid;
@@ -79,18 +79,30 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
         background-position: 0 50%;
     }
 }
-.main{
+/*.main{
     width: 100%;
     height:auto;
     background-color:$color-fondo;
     display: grid;
     grid-template-columns:20% 70% 10%;
     grid-template-rows: 20% 60% 20%;
-}
+}*/
 .slider-indice{
     grid-column: 2;
     grid-row: 2;
 }
+/*prueba inicio izquierda y derecha*/
+.container-fluid{
+    display: grid;
+    grid-column: 60% 40%;
+}
+.izquierda{
+    grid-column: 1;
+}.derecha{
+    grid-column: 2;
+    margin-left: auto;
+}
+
 /*prueba de css a las tarjetas de contenido*/
 .centroDePagina-1{
     display: grid;   
@@ -109,7 +121,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     flex-direction: row;
     flex-wrap: wrap;
     width: 45%;
-    @extend .bordes-detalles;
+    @extend .bordes-detalles2;
     h5{
         font-size: $letra-card;
     }
@@ -119,9 +131,15 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     padding: 15px;
 }
 //prueba de bordes y detalles @extended//
-.bordes-detalles{
+.bordes-detalles1{
     text-align: center;
     border-radius: 4px;
+    border-bottom:#14665F  4px solid;
+    border-right:#14665F 2px solid;
+    margin-bottom: 2px;
+}
+.bordes-detalles2{
+    text-align: center;
     border-bottom:#14665F  4px solid;
     border-right:#14665F 2px solid;
     margin-bottom: 2px;
@@ -150,7 +168,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .tarjeta3{
     padding: 15px;
     margin: 1rem;
-    @extend .bordes-detalles;
+    @extend .bordes-detalles1;
     font-size: $letra-card;
     font-size: $letra-texto;
 }
@@ -276,11 +294,11 @@ footer{
         width: 95%; 
     }       
     .centroDePagina-1{
-        grid-column: 1;
+        grid-column: 12;
     }
-    .centroDePagina-1 img{
+    /*.centroDePagina-1 img{
         width: 150px;
-    }
+    }*/
     .nav2{
         grid-column: 1 / 2;
         grid-row: 3;

@@ -13,50 +13,109 @@
 </head>
 <body class="container-fluid">
     <header class="header">
-        <img class="header__logo" src="../assets/logo3.jpg" alt="logo" width="200"/>
+        <a button type="button" class="btn btn-outline-success" href="../index.html"><img class="header__logo" src="../assets/logo3.jpg" alt="logo" width="200" /></a>
         <div class="header__instituto" ><h3>Instituto Modelo de Endoscopia y Gastroenterologia</h3>
         </div>
         <div class="header__nav">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">INICIO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a type="button" class="btn btn-outline-success" href="../index.html">INICIO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                    </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                    <!--<li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">INICIO</a>
-                    </li>-->
-                    <li class="nav-item">
-                        <a class="navbar-brand" aria-current="page" href="../pages/endoscopias.html">ENDOSCOPIAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/preparacion.html">PREPARACION</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/profesionales.html">PROFESIONALES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/contactenos.html">CONTACTENOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/turnos.html">TURNOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../pages/consentimientos.html">CONSENTIMIENTO</a>
-                    </li>
+                        <li class="nav-item">
+                            <a button type="button" class="btn btn-outline-success" href="../pages/endoscopias.html">ENDOSCOPIAS
+                            </a>
+                        <li class="nav-item">
+                            <a button type="button" class="btn btn-outline-success" href="../pages/preparacion.html">PREPARACION
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a button type="button" class="btn btn-outline-success" href="../pages/profesionales.html">PROFESIONALES
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a button type="button" class="btn btn-outline-success" href="../pages/contactenos.html">CONTACTENOS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a button type="button" class="btn btn-outline-success" href="../pages/servicios.html">SERVICIOS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a button type="button" class="btn btn-outline-success" href="../pages/turnos.html">TURNOS
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a button type="button" class="btn btn-outline-success" href="../pages/consentimientos.html">CONSENTIMIENTO
+                            </a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </nav>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
-        <div class="cont-endoscopia">
+        <div class="container-fluid">
+            <div class="izquierda">
+                <div class="d-grid gap-2 col-12 mx-auto">
+                    <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal1" type="button"><img src="../assets/gastro-foto.jpg" width="150em" alt="">
+                            ENDOSCOPIA DIGESTIVA ALTA</button>
+                    <button class="btn btn-outline-success"  data-bs-toggle="modal" data-bs-target="#exampleModal2" type="button"><img src="../assets/colono-imagen.jpg" width="150em" alt="">ENDOSCOPIA DIGESTIVA BAJA</button>
+                </div>
+            </div>
+            <div class="derecha">
+                <div class="d-grid  mx-auto">
+                    <img src="../assets/endoscopia-foto4.jpg" width="300px" alt="">
+                </div>
+            </div>
+        </div>
+        <!--modal endoscopias-->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">ENDOSCOPIA ALTA</h5>
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <P>Es la exploración del esófago, el estómago y el duodeno a través de la boca, mediante un endoscopio. Este es un instrumento flexible en forma de tubo, terminado en una lente y una cámara. Las imágenes se transfieren a un monitor para ser analizadas o almacenadas. Permite detectar enfermedades de esos órganos, tomar muestras y aplicar tratamientos.</P>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success">mas informacion...</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">ENDOSCOPIA BAJA</h5>
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <P>Es una técnica de imagen que nos sirve para explorar el interior del intestino
+                        grueso (colon, sigma y recto), introduciendo por el ano un tubo flexible y delgado
+                        denominado endoscopio que en su extremo tiene una cámara.
+                        Se indica cuando existen síntomas que hacen sospechar enfermedades que afectan al
+                        intestino grueso, como son: alternancia entre estreñimiento y diarrea, diarrea
+                        persistente, dolor abdominal persistente, heces con sangre.
+                        Permite no sólo ver las lesiones sino también obtener biopsias (muestras de tejido) y
+                        realizar tratamientos locales.</P>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success">mas informacion...</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--<div class="cont-endoscopia">
             <div class="card-endoscopia">
                 <img src="../assets/imagen2.jpg" width="150px" alt="...">
                             <h5 class="card-title">Endoscopía digestiva ALTA</h5>
@@ -76,7 +135,7 @@
                                 realizar tratamientos locales.</p>
                                 <button type="button" class="btn btn-secondary btn-sm">Mas informacion</button>
             </div> 
-        </div>
+        </div>-->
     </main>
         <section class="contenido__flex">
             <ul class="nav justify-content-center">
