@@ -25,7 +25,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 
 .header__logo {
   grid-column: 1/3;
-  /*@extend .bordes-detalles1;*/
 }
 
 .header__instituto {
@@ -46,21 +45,16 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
   text-align: center;
   color: rgb(5, 19, 5);
-  /*@extend .bordes-detalles1;*/
 }
 
 .body {
   background-color: #def2f4;
 }
 
-/*.main{
-    width: 100%;
-    height:auto;
-    background-color:$color-fondo;
-    display: grid;
-    grid-template-columns:20% 70% 10%;
-    grid-template-rows: 20% 60% 20%;
-}*/
+.imagen-principal {
+  display: none;
+}
+
 .slider-indice {
   grid-column: 2;
   grid-row: 2;
@@ -110,9 +104,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   font-size: 0.9em;
 }
 
-.bordes-detalles1, .tarjeta1,
-.tarjeta2,
-.tarjeta3 {
+.bordes-detalles1 {
   text-align: center;
   border-radius: 4px;
   border-bottom: #14665F 4px solid;
@@ -148,65 +140,54 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   margin-bottom: 10px;
 }
 
-.tarjeta1,
-.tarjeta2,
-.tarjeta3 {
-  padding: 15px;
-  margin: 1rem;
-  font-size: 1.1em;
-  font-size: 0.9em;
+.menuRedes {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: -140px;
+  top: 200px;
+  width: 210px;
+  z-index: 1000;
 }
 
-.container-endo {
-  width: 800px;
-  height: 200px;
+.menuRedes-list li {
+  list-style-type: none;
+  background-color: #DBDEDD;
+  color: #e3f1f1;
+  height: 43px;
+  padding: 0px;
+  margin: 0px 0px 1px 0px;
+  border-radius: 15px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
 }
 
-/*barra inferior pre footer*/
-/*.menuRedes{
-    padding:0px;
-    margin:0px;
-    position:fixed;
-    right:-140px;
-    top:200px;
-    width:210px;
-    z-index: 1;
+.menuRedes-list li:hover {
+  margin-left: -115px;
 }
-.menuRedes-list li{
-    list-style-type:none;
-    background-color: #DBDEDD ;
-    color:#e3f1f1;
-    height:43px;
-    padding:0px;
-    margin:0px 0px 1px 0px;
-    border-radius: 15px;
-    -webkit-transition:all 0.25s ease-in-out;
-    -moz-transition:all 0.25s ease-in-out;
-    -o-transition:all 0.25s ease-in-out;
-    transition:all 0.25s ease-in-out;
-    cursor:pointer;
+
+.menuRedes-list li img {
+  float: left;
+  margin: 5px 4px;
+  margin-right: 5px;
 }
-.menuRedes-list li:hover{
-    margin-left:-115px;
+
+.menuRedes-list li p {
+  padding-top: 5px;
+  margin: 0px;
+  line-height: 16px;
+  font-size: 11px;
 }
-.menuRedes-list li img{
-    float:left;
-    margin:5px 4px;
-    margin-right:5px;
+
+.menuRedes-list li p a {
+  text-decoration: none;
+  color: black;
 }
-.menuRedes-list li p{
-    padding-top:5px;
-    margin:0px;
-    line-height:16px;
-    font-size:11px;
+
+.menuRedes-list li p a:hover {
+  text-decoration: underline;
 }
-.menuRedes-list li p a{
-    text-decoration:none;
-    color: black;
-}
-.menuRedes-list li p a:hover{
-    text-decoration:underline;
-}*/
+
 footer {
   width: 100%;
   height: auto;
@@ -228,6 +209,49 @@ footer {
   xl: 1200px,
   xxl: 1400px
 );*/
+@media screen and (max-width: 375px) {
+  .header__logo {
+    width: 280px;
+  }
+
+  .header__instituto {
+    display: none;
+  }
+
+  .header__nav {
+    grid-column: 1/9;
+    padding-left: 0;
+  }
+
+  .header__nav li {
+    padding: 1px 3px;
+    font-size: 14px;
+  }
+
+  .main {
+    width: 375px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 87% 13%;
+    grid-template-rows: 60% 30% 10%;
+  }
+
+  #carouselExampleCaptions {
+    display: none;
+  }
+
+  .cont-endoscopia {
+    display: inline;
+  }
+
+  .card-endoscopia {
+    width: 95%;
+  }
+
+  .centroDePagina-1 {
+    grid-column: 12;
+  }
+}
 @media screen and (min-width: 576px) {
   .header__nav {
     grid-column: 1/9;
@@ -257,19 +281,6 @@ footer {
 
   .centroDePagina-1 {
     grid-column: 12;
-  }
-
-  /*.centroDePagina-1 img{
-      width: 150px;
-  }*/
-  .nav2 {
-    grid-column: 1/2;
-    grid-row: 3;
-  }
-
-  .nav2-items {
-    margin-left: 0;
-    font-size: 8px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -305,15 +316,5 @@ footer {
 
   .centroDePagina-1 img {
     width: 150px;
-  }
-
-  .nav2 {
-    grid-column: 1/2;
-    grid-row: 3;
-  }
-
-  .nav2-items {
-    margin-left: 0;
-    font-size: 8px;
   }
 }/*# sourceMappingURL=estilos.css.map */

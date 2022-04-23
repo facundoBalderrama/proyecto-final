@@ -10,6 +10,8 @@ $color-gradiente-oscuro: linear-gradient(to right #0E554A 0%, #14665F 50%, #DBDE
 //me parece que no va asi//
 $letra-card: 1.1em;
 $letra-texto: 0.9em;
+$letra-card-movil: 0.7em;
+
 
 
 *{
@@ -37,7 +39,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 }
 .header__logo{
     grid-column: 1 / 3;
-    /*@extend .bordes-detalles1;*/
 }
 .header__instituto{
     grid-column: 5 / 8;
@@ -57,22 +58,13 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     text-align:center;
     color:rgb(5, 19, 5);
-    /*@extend .bordes-detalles1;*/
-    //border-radius: 4px;
-    //border-bottom:#14665F  2px solid;
-    //border-right:#14665F 1px solid;
 }
 .body{
     background-color: $color-fondo;
 }
-/*.main{
-    width: 100%;
-    height:auto;
-    background-color:$color-fondo;
-    display: grid;
-    grid-template-columns:20% 70% 10%;
-    grid-template-rows: 20% 60% 20%;
-}*/
+.imagen-principal{
+    display: none;
+}
 .slider-indice{
     grid-column: 2;
     grid-row: 2;
@@ -89,7 +81,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     grid-column: 2;
     margin-left: auto;
 }
-$card-box-shadow:                   null;
 /*prueba de css a las tarjetas de contenido*/
 .centroDePagina-1{
     display: grid;   
@@ -150,29 +141,14 @@ $card-box-shadow:                   null;
     border-right:#14665F 3px solid;
     margin-bottom: 10px;
 }
-.tarjeta1,
-.tarjeta2,
-.tarjeta3{
-    padding: 15px;
-    margin: 1rem;
-    @extend .bordes-detalles1;
-    font-size: $letra-card;
-    font-size: $letra-texto;
-}
-.container-endo{
-    width: 800px;
-    height: 200px;
-}
-/*barra inferior pre footer*/
-
-/*.menuRedes{
+.menuRedes{
     padding:0px;
     margin:0px;
     position:fixed;
     right:-140px;
     top:200px;
     width:210px;
-    z-index: 1;
+    z-index: 1000;
 }
 .menuRedes-list li{
     list-style-type:none;
@@ -208,7 +184,7 @@ $card-box-shadow:                   null;
 }
 .menuRedes-list li p a:hover{
     text-decoration:underline;
-}*/
+}
 footer{
     width: 100%;
     height: auto;
@@ -227,6 +203,41 @@ footer{
   xl: 1200px,
   xxl: 1400px
 );*/
+@media screen and (max-width:375px){
+    .header__logo{
+        width: 280px;
+    }
+    .header__instituto{
+        display: none;
+    }
+    .header__nav{
+        grid-column: 1 / 9;
+        padding-left: 0;
+    }
+    .header__nav li{
+        padding:1px 3px;
+        font-size: 14px;
+    }
+    .main{
+        width: 375px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 87% 13%;
+        grid-template-rows:60% 30% 10%;
+    }
+    #carouselExampleCaptions{
+        display: none;
+    }
+    .cont-endoscopia{
+        display: inline;
+    }
+    .card-endoscopia{
+        width: 95%; 
+    }       
+    .centroDePagina-1{
+        grid-column: 12;
+    }
+}
 @media screen and (min-width:576px){
     .header__nav{
         grid-column: 1 / 9;
@@ -251,18 +262,6 @@ footer{
     }       
     .centroDePagina-1{
         grid-column: 12;
-    }
-    /*.centroDePagina-1 img{
-        width: 150px;
-    }*/
-    .nav2{
-        grid-column: 1 / 2;
-        grid-row: 3;
-    }
-    .nav2-items{
-        margin-left: 0;
-        font-size: 8px;
-
     }
 }
 @media screen and (min-width:768px){
@@ -293,13 +292,5 @@ footer{
     .centroDePagina-1 img{
         width: 150px;
     }
-    .nav2{
-        grid-column: 1 / 2;
-        grid-row: 3;
-    }
-    .nav2-items{
-        margin-left: 0;
-        font-size: 8px;
-
-    }
+  
 }
