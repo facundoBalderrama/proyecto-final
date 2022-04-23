@@ -165,7 +165,7 @@ $card-box-shadow:                   null;
 }
 /*barra inferior pre footer*/
 
-.menuRedes{
+/*.menuRedes{
     padding:0px;
     margin:0px;
     position:fixed;
@@ -177,7 +177,6 @@ $card-box-shadow:                   null;
 .menuRedes-list li{
     list-style-type:none;
     background-color: #DBDEDD ;
-    /*background-color:rgb(229, 236, 235);*/
     color:#e3f1f1;
     height:43px;
     padding:0px;
@@ -206,12 +205,10 @@ $card-box-shadow:                   null;
 .menuRedes-list li p a{
     text-decoration:none;
     color: black;
-    /*color: #DBDEDD;
-    color:#2C3539;*/
 }
 .menuRedes-list li p a:hover{
     text-decoration:underline;
-}
+}*/
 footer{
     width: 100%;
     height: auto;

@@ -163,57 +163,50 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 }
 
 /*barra inferior pre footer*/
-.menuRedes {
-  padding: 0px;
-  margin: 0px;
-  position: fixed;
-  right: -140px;
-  top: 200px;
-  width: 210px;
-  z-index: 1;
+/*.menuRedes{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-140px;
+    top:200px;
+    width:210px;
+    z-index: 1;
 }
-
-.menuRedes-list li {
-  list-style-type: none;
-  background-color: #DBDEDD;
-  /*background-color:rgb(229, 236, 235);*/
-  color: #e3f1f1;
-  height: 43px;
-  padding: 0px;
-  margin: 0px 0px 1px 0px;
-  border-radius: 15px;
-  transition: all 0.25s ease-in-out;
-  cursor: pointer;
+.menuRedes-list li{
+    list-style-type:none;
+    background-color: #DBDEDD ;
+    color:#e3f1f1;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    border-radius: 15px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
 }
-
-.menuRedes-list li:hover {
-  margin-left: -115px;
+.menuRedes-list li:hover{
+    margin-left:-115px;
 }
-
-.menuRedes-list li img {
-  float: left;
-  margin: 5px 4px;
-  margin-right: 5px;
+.menuRedes-list li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
 }
-
-.menuRedes-list li p {
-  padding-top: 5px;
-  margin: 0px;
-  line-height: 16px;
-  font-size: 11px;
+.menuRedes-list li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
 }
-
-.menuRedes-list li p a {
-  text-decoration: none;
-  color: black;
-  /*color: #DBDEDD;
-  color:#2C3539;*/
+.menuRedes-list li p a{
+    text-decoration:none;
+    color: black;
 }
-
-.menuRedes-list li p a:hover {
-  text-decoration: underline;
-}
-
+.menuRedes-list li p a:hover{
+    text-decoration:underline;
+}*/
 footer {
   width: 100%;
   height: auto;
