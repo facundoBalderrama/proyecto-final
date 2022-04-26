@@ -52,10 +52,12 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     
     grid-column: 1 / 9;
     padding-left: 10%;
+    background-image:$color-cuadros-oscuro ;
 }
 .header__nav li{
     font-size: $letra-card;
-    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    /*background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);*/
+    
     text-align:center;
     color:rgb(5, 19, 5);
 }
@@ -63,6 +65,9 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     background-color: $color-fondo;
 }
 .imagen-principal{
+    display: none;
+}
+.text-center{
     display: none;
 }
 .slider-indice{
@@ -186,8 +191,11 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     text-decoration:underline;
 }
 footer{
+
     width: 100%;
-    height: auto;
+    height: 20vh;
+    margin-bottom: 0;
+    padding: 10px;
     background-color: $color-botones;
 }
 .footer__leyenda{
@@ -218,13 +226,13 @@ footer{
         padding:1px 3px;
         font-size: 14px;
     }
-    .main{
+    /*.main{
         width: 375px;
         height: auto;
         display: grid;
         grid-template-columns: 87% 13%;
         grid-template-rows:60% 30% 10%;
-    }
+    }*/
     #carouselExampleCaptions{
         display: none;
     }
@@ -237,6 +245,9 @@ footer{
     .centroDePagina-1{
         grid-column: 12;
     }
+    .footer__leyenda h6{
+        font-size: $letra-card-movil;
+    }
 }
 @media screen and (min-width:576px){
     .header__nav{
@@ -247,13 +258,13 @@ footer{
         padding:1px 3px;
         font-size: 14px;
     }
-    .main{
+    /*.main{
         width: 100%;
         height: auto;
         display: grid;
         grid-template-columns: 87% 13%;
         grid-template-rows:60% 30% 10%;
-    }
+    }*/
     .cont-endoscopia{
         display: inline;
     }
@@ -262,6 +273,9 @@ footer{
     }       
     .centroDePagina-1{
         grid-column: 12;
+    }
+    .footer__leyenda h6{
+        font-size: $letra-card;
     }
 }
 @media screen and (min-width:768px){
@@ -273,13 +287,13 @@ footer{
         padding:1px 3px;
         font-size: 16px;
     }
-    .main{
+    /*.main{
         width: 100%;
         height: auto;
         display: grid;
         grid-template-columns: 87% 13%;
         grid-template-rows:60% 30% 10%;
-    }
+    }*/
     .cont-endoscopia{
         display: inline;
     } 

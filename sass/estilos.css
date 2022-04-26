@@ -38,11 +38,12 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .header__nav {
   grid-column: 1/9;
   padding-left: 10%;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #14665F 100%);
 }
 
 .header__nav li {
   font-size: 1.1em;
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  /*background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);*/
   text-align: center;
   color: rgb(5, 19, 5);
 }
@@ -52,6 +53,10 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 }
 
 .imagen-principal {
+  display: none;
+}
+
+.text-center {
   display: none;
 }
 
@@ -190,7 +195,9 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 
 footer {
   width: 100%;
-  height: auto;
+  height: 20vh;
+  margin-bottom: 0;
+  padding: 10px;
   background-color: #DBDEDD;
 }
 
@@ -228,14 +235,13 @@ footer {
     font-size: 14px;
   }
 
-  .main {
-    width: 375px;
-    height: auto;
-    display: grid;
-    grid-template-columns: 87% 13%;
-    grid-template-rows: 60% 30% 10%;
-  }
-
+  /*.main{
+      width: 375px;
+      height: auto;
+      display: grid;
+      grid-template-columns: 87% 13%;
+      grid-template-rows:60% 30% 10%;
+  }*/
   #carouselExampleCaptions {
     display: none;
   }
@@ -251,6 +257,10 @@ footer {
   .centroDePagina-1 {
     grid-column: 12;
   }
+
+  .footer__leyenda h6 {
+    font-size: 0.7em;
+  }
 }
 @media screen and (min-width: 576px) {
   .header__nav {
@@ -263,14 +273,13 @@ footer {
     font-size: 14px;
   }
 
-  .main {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 87% 13%;
-    grid-template-rows: 60% 30% 10%;
-  }
-
+  /*.main{
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 87% 13%;
+      grid-template-rows:60% 30% 10%;
+  }*/
   .cont-endoscopia {
     display: inline;
   }
@@ -281,6 +290,10 @@ footer {
 
   .centroDePagina-1 {
     grid-column: 12;
+  }
+
+  .footer__leyenda h6 {
+    font-size: 1.1em;
   }
 }
 @media screen and (min-width: 768px) {
@@ -294,14 +307,13 @@ footer {
     font-size: 16px;
   }
 
-  .main {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: 87% 13%;
-    grid-template-rows: 60% 30% 10%;
-  }
-
+  /*.main{
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 87% 13%;
+      grid-template-rows:60% 30% 10%;
+  }*/
   .cont-endoscopia {
     display: inline;
   }
