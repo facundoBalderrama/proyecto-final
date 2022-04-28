@@ -209,14 +209,7 @@ footer {
        text-align-last: center;
 }
 
-/*$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);*/
+/*responsive*/
 @media screen and (max-width: 375px) {
   .header__logo {
     width: 280px;
@@ -236,13 +229,6 @@ footer {
     font-size: 14px;
   }
 
-  /*.main{
-      width: 375px;
-      height: auto;
-      display: grid;
-      grid-template-columns: 87% 13%;
-      grid-template-rows:60% 30% 10%;
-  }*/
   #carouselExampleCaptions {
     display: none;
   }
@@ -308,13 +294,6 @@ footer {
     font-size: 16px;
   }
 
-  /*.main{
-      width: 100%;
-      height: auto;
-      display: grid;
-      grid-template-columns: 87% 13%;
-      grid-template-rows:60% 30% 10%;
-  }*/
   .cont-endoscopia {
     display: inline;
   }
