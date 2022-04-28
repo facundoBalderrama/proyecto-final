@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/facundoBalderrama/proyecto-final/issues"
   },
-  "homepage": "https://github.com/facundoBalderrama/proyecto-final#readme"
+  "homepage": "https://github.com/facundoBalderrama/proyecto-final#readme",
+  "dependencies": {
+    "boostrap": "^2.0.0"
+  }
 }

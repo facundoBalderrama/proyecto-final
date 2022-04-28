@@ -1,7 +1,7 @@
 
 $color-fondo: #def2f4; 
 $color-cuadros: linear-gradient(135deg, #DBDEDD 0%, #c3e2dd 100%);
-$color-cuadros-oscuro: linear-gradient(135deg, #f5f7fa 0%, #14665F 100%);
+$color-cuadros-oscuro: linear-gradient(135deg, #f5f7fa 0%, #2E9990  100%);
 $color-botones: #DBDEDD; 
 $color-contenido: #eaf3f1 ;
 $color-gradiente: linear-gradient(to right #14665F 0%, #2E9990 50%, #DBDEDD 100%);
@@ -14,6 +14,7 @@ $letra-card-movil: 0.7em;
 
 
 
+@import url(../libreria.boostrap/css/bootstrap.min.css);
 *{
     margin: 0;
     padding: 0;
