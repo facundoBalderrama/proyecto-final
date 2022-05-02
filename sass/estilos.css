@@ -108,6 +108,14 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   font-size: 0.9em;
 }
 
+.card-body h6 {
+  color: #0E554A;
+}
+
+.cons-btn {
+  color: #0E554A;
+}
+
 .turnos {
   width: 100%;
   height: 400px;
@@ -214,10 +222,6 @@ footer {
 
 /*responsive*/
 @media screen and (max-width: 375px) {
-  .header__logo {
-    width: 280px;
-  }
-
   .header__instituto {
     display: none;
   }
