@@ -66,7 +66,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   grid-row: 2;
 }
 
-/*prueba inicio izquierda y derecha*/
 .container-fluid {
   display: grid;
   grid-column: 60% 40%;
@@ -81,7 +80,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   margin-left: auto;
 }
 
-/*prueba de css a las tarjetas de contenido*/
 .centroDePagina-1 {
   display: grid;
   grid-column: 2;
@@ -110,6 +108,12 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   font-size: 0.9em;
 }
 
+.turnos {
+  width: 100%;
+  height: 400px;
+  background-color: #f3fbfa;
+}
+
 .bordes-detalles1 {
   text-align: center;
   border-radius: 4px;
@@ -125,14 +129,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   margin-bottom: 2px;
 }
 
-.zoom {
-  transition: transform 0.2s;
-}
-
-.zoom:hover {
-  transform: scale(1.1);
-}
-
 .tarjeta0 {
   margin-top: 5px;
   margin-left: 5px;
@@ -146,6 +142,12 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   margin-bottom: 10px;
 }
 
+.conte {
+  width: 100%;
+  height: auto;
+}
+
+/* inicio menu de redes sociales*/
 .menuRedes {
   padding: 0px;
   margin: 0px;
@@ -194,12 +196,13 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   text-decoration: underline;
 }
 
+/* fin de menu de redes sociales*/
 footer {
   width: 100%;
   height: 20vh;
   margin-bottom: 0;
   padding: 10px;
-  background-color: #DBDEDD;
+  background-color: #2E9990;
 }
 
 .footer__leyenda {
@@ -260,13 +263,6 @@ footer {
     font-size: 14px;
   }
 
-  /*.main{
-      width: 100%;
-      height: auto;
-      display: grid;
-      grid-template-columns: 87% 13%;
-      grid-template-rows:60% 30% 10%;
-  }*/
   .cont-endoscopia {
     display: inline;
   }

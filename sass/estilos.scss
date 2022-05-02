@@ -75,7 +75,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     grid-column: 2;
     grid-row: 2;
 }
-/*prueba inicio izquierda y derecha*/
 .container-fluid{
     display: grid;
     grid-column: 60% 40%;
@@ -87,7 +86,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     grid-column: 2;
     margin-left: auto;
 }
-/*prueba de css a las tarjetas de contenido*/
 .centroDePagina-1{
     display: grid;   
     grid-column: 2 
@@ -114,6 +112,11 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     }
     padding: 15px;
 }
+.turnos{
+    width: 100%;
+    height: 400px;
+    background-color: #f3fbfa;
+}
 //prueba de bordes y detalles @extended//
 .bordes-detalles1{
     text-align: center;
@@ -128,12 +131,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     border-right:#14665F 2px solid;
     margin-bottom: 2px;
 }
-.zoom {
-    transition: transform .2s; 
-}
-.zoom:hover {
-    transform: scale(1.1); 
-}
 
 .tarjeta0{
     margin-top: 5px;
@@ -147,6 +144,11 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     border-right:#14665F 3px solid;
     margin-bottom: 10px;
 }
+.conte{
+    width: 100%;
+    height: auto;
+}
+/* inicio menu de redes sociales*/
 .menuRedes{
     padding:0px;
     margin:0px;
@@ -191,12 +193,13 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .menuRedes-list li p a:hover{
     text-decoration:underline;
 }
+/* fin de menu de redes sociales*/
 footer{
     width: 100%;
     height: 20vh;
     margin-bottom: 0;
     padding: 10px;
-    background-color: $color-botones;
+    background-color: #2E9990;
 }
 .footer__leyenda{
     height: auto;
@@ -244,13 +247,6 @@ footer{
         padding:1px 3px;
         font-size: 14px;
     }
-    /*.main{
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: 87% 13%;
-        grid-template-rows:60% 30% 10%;
-    }*/
     .cont-endoscopia{
         display: inline;
     }
