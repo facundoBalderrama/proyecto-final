@@ -34,11 +34,19 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .header{
     width: 100%;
     height: auto;
-    background-image: $color-cuadros-oscuro;
+    //background-image: $color-cuadros-oscuro;
     display: grid;
     grid-template-columns:repeat (8, 1fr);
 }
-.header__logo{
+.imagen-de-fondo{
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.imagen-de-fondo img{
+    width: 350px;
+
+}
+/*.header__logo{
     grid-column: 1 / 3;
 }
 .header__instituto{
@@ -48,7 +56,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     justify-content: center;
     align-items: center;
     
-}
+}*/
 .header__nav{
     
     grid-column: 1 / 9;
@@ -71,14 +79,10 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .text-center{
     display: none;
 }
-.slider-indice{
-    grid-column: 2;
-    grid-row: 2;
-}
-.container-fluid{
+/*.container-fluid{
     display: grid;
     grid-column: 60% 40%;
-}
+}*/
 .izquierda{
     grid-column: 1;
 }
@@ -86,9 +90,21 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     grid-column: 2;
     margin-left: auto;
 }
-.centroDePagina-1{
+/*.centroDePagina-1{
     display: grid;   
     grid-column: 2 
+}*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    background-color: #2E9990;
+    @extend .bordes-detalles1;
+    flex: 1 1 100px;
+}
+.IMEG-inicio{
+    text-align: center;
 }
 .cont-endoscopia{
     background-color: $color-gradiente;
@@ -137,6 +153,18 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     border-right:#14665F 2px solid;
     margin-bottom: 2px;
 }
+.background{
+    width: 2rem;
+    height: 100%;
+}
+.background{
+    background: linear-gradient(45deg, #DBDEDD, #2E9990, #0E554A);
+    animation: hue-rotate 1s linear infinite alternate;
+}
+@keyframes hue-rotate{
+    to{filter: hue-rotate(50deg);}
+}
+
 
 .tarjeta0{
     margin-top: 5px;
@@ -214,6 +242,10 @@ footer{
 }
 /*responsive*/
 @media screen and (max-width:375px){
+    .imagen-de-fondo img{
+        width: 200px;
+
+    }
     .header__instituto{
         display: none;
     }
@@ -234,14 +266,50 @@ footer{
     .card-endoscopia{
         width: 95%; 
     }       
-    .centroDePagina-1{
+    /*.centroDePagina-1{
         grid-column: 12;
+    }*/
+    .footer__leyenda h6{
+        font-size: $letra-card-movil;
     }
+}
+@media screen and (max-width:425px){
+    .imagen-de-fondo img{
+        width: 250px;
+
+    }
+    .header__instituto{
+        display: none;
+    }
+    .header__nav{
+        grid-column: 1 / 9;
+        padding-left: 0;
+    }
+    .header__nav li{
+        padding:1px 3px;
+        font-size: 14px;
+    }
+    #carouselExampleCaptions{
+        display: none;
+    }
+    .cont-endoscopia{
+        display: inline;
+    }
+    .card-endoscopia{
+        width: 95%; 
+    }       
+    /*.centroDePagina-1{
+        grid-column: 12;
+    }*/
     .footer__leyenda h6{
         font-size: $letra-card-movil;
     }
 }
 @media screen and (min-width:576px){
+    .imagen-de-fondo img{
+        width: 280px;
+
+    }
     .header__nav{
         grid-column: 1 / 9;
         padding-left: 0;
@@ -256,14 +324,18 @@ footer{
     .card-endoscopia{
         width: 95%; 
     }       
-    .centroDePagina-1{
+    /*.centroDePagina-1{
         grid-column: 12;
-    }
+    }*/
     .footer__leyenda h6{
         font-size: $letra-card;
     }
 }
 @media screen and (min-width:768px){
+    .imagen-de-fondo img{
+        width: 350px;
+
+    }
     .header__nav{
         grid-column: 1 / 9;
         padding-left: 0;
@@ -278,9 +350,9 @@ footer{
     .card-endoscopia{
         width: 95%; 
     }          
-    .centroDePagina-1{
+    /*.centroDePagina-1{
         grid-column: 1;
-    }
+    }*/
     .centroDePagina-1 img{
         width: 150px;
     }
