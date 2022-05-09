@@ -8,9 +8,9 @@ $color-gradiente: linear-gradient(to right #14665F 0%, #2E9990 50%, #DBDEDD 100%
 $color-gradiente-oscuro: linear-gradient(to right #0E554A 0%, #14665F 50%, #DBDEDD 100%);
 //$bordes-redondeados: 4px; border-bottom: #14665F 2px solid; border-right:#14665F 1px solid;//
 //me parece que no va asi//
-$letra-card: 1.1em;
-$letra-texto: 0.9em;
-$letra-card-movil: 0.7em;
+$letra-card: 1em;
+$letra-texto: 0.8em;
+$letra-card-movil: 0.5rem;
 
 
 
@@ -34,55 +34,25 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .header{
     width: 100%;
     height: auto;
-    //background-image: $color-cuadros-oscuro;
-    display: grid;
-    grid-template-columns:repeat (8, 1fr);
 }
-.imagen-de-fondo{
+.imagen-de-header{
     background-repeat: no-repeat;
     background-size: contain;
 }
-.imagen-de-fondo img{
-    width: 350px;
-
-}
-/*.header__logo{
-    grid-column: 1 / 3;
-}
-.header__instituto{
-    grid-column: 5 / 8;
-    margin-left: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}*/
-.header__nav{
-    
-    grid-column: 1 / 9;
-    padding-left: 10%;
-    background-image:$color-cuadros-oscuro ;
+.imagen-de-header img{
+    width: 220px;
 }
 .header__nav li{
     font-size: $letra-card;
-    /*background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);*/
-    
     text-align:center;
     color:rgb(5, 19, 5);
 }
 .body{
     background-color: $color-fondo;
 }
-.imagen-principal{
-    display: none;
-}
 .text-center{
     display: none;
 }
-/*.container-fluid{
-    display: grid;
-    grid-column: 60% 40%;
-}*/
 .izquierda{
     grid-column: 1;
 }
@@ -90,21 +60,39 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     grid-column: 2;
     margin-left: auto;
 }
-/*.centroDePagina-1{
-    display: grid;   
-    grid-column: 2 
-}*/
 .container{
     display: flex;
     flex-wrap: wrap;
+    gap: 1em;
+    text-decoration: none;
 }
 .item{
-    background-color: #2E9990;
-    @extend .bordes-detalles1;
+    margin-bottom: 30px;
+    padding: 3px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0,8em;
+    text-decoration-color: #0E554A;
+    background: linear-gradient(to right, #DBDEDD , white);
     flex: 1 1 100px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 .IMEG-inicio{
     text-align: center;
+}
+.tarjeta1{
+    margin: 20px;
+    padding: 10px 50px;
+    text-align: center;
+}
+.IMEG-inicio h6{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+//modal endoscopia
+h5 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
 }
 .cont-endoscopia{
     background-color: $color-gradiente;
@@ -113,21 +101,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     padding: 2em;
     justify-content: space-around;
 }    
-.card-endoscopia{
-    font-size: $letra-card;
-    background-color: $color-gradiente-oscuro;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 45%;
-    @extend .bordes-detalles2;
-    h5{
-        font-size: $letra-card;
-    }
-    p{
-        font-size: $letra-texto;
-    }
-    padding: 15px;
-}
 .card-body h6{
     color: #0E554A;
 }
@@ -139,7 +112,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     height: 400px;
     background-color: #f3fbfa;
 }
-//prueba de bordes y detalles @extended//
+// bordes y detalles @extended//
 .bordes-detalles1{
     text-align: center;
     border-radius: 4px;
@@ -153,19 +126,16 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     border-right:#14665F 2px solid;
     margin-bottom: 2px;
 }
+/*efecto de fondo dinamico*/
 .background{
     width: 2rem;
     height: 100%;
-}
-.background{
     background: linear-gradient(45deg, #DBDEDD, #2E9990, #0E554A);
     animation: hue-rotate 1s linear infinite alternate;
 }
 @keyframes hue-rotate{
     to{filter: hue-rotate(50deg);}
 }
-
-
 .tarjeta0{
     margin-top: 5px;
     margin-left: 5px;
@@ -188,7 +158,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     margin:0px;
     position:fixed;
     right:-140px;
-    top:200px;
+    top:150px;
     width:210px;
     z-index: 1000;
 }
@@ -241,119 +211,38 @@ footer{
     text-align-last:center
 }
 /*responsive*/
-@media screen and (max-width:375px){
-    .imagen-de-fondo img{
-        width: 200px;
-
+@media screen and (max-width:768px){
+    .imagen-de-header h6{
+        width: 190px;
     }
-    .header__instituto{
-        display: none;
+    .tarjeta1{
+        margin: 5px;
+        padding: 10px 50px;
     }
-    .header__nav{
-        grid-column: 1 / 9;
-        padding-left: 0;
+    .IMEG-inicio h6{
+        font-size: 0.7em;
     }
-    .header__nav li{
-        padding:1px 3px;
-        font-size: 14px;
+    .footer{
+        margin-bottom: 0;
     }
-    #carouselExampleCaptions{
-        display: none;
+    .footer__leyenda h6{
+        font-size:0.8em;
     }
-    .cont-endoscopia{
-        display: inline;
+    
+}
+@media screen and (max-width:600px){
+    .imagen-de-header img{
+        width: 180px;
     }
-    .card-endoscopia{
-        width: 95%; 
-    }       
-    /*.centroDePagina-1{
-        grid-column: 12;
-    }*/
+    .tarjeta1{
+        margin: 10px;
+        padding: 20px 50px;
+    }
+    .footer{
+        margin-bottom: 0;
+    }
     .footer__leyenda h6{
         font-size: $letra-card-movil;
     }
-}
-@media screen and (max-width:425px){
-    .imagen-de-fondo img{
-        width: 250px;
-
-    }
-    .header__instituto{
-        display: none;
-    }
-    .header__nav{
-        grid-column: 1 / 9;
-        padding-left: 0;
-    }
-    .header__nav li{
-        padding:1px 3px;
-        font-size: 14px;
-    }
-    #carouselExampleCaptions{
-        display: none;
-    }
-    .cont-endoscopia{
-        display: inline;
-    }
-    .card-endoscopia{
-        width: 95%; 
-    }       
-    /*.centroDePagina-1{
-        grid-column: 12;
-    }*/
-    .footer__leyenda h6{
-        font-size: $letra-card-movil;
-    }
-}
-@media screen and (min-width:576px){
-    .imagen-de-fondo img{
-        width: 280px;
-
-    }
-    .header__nav{
-        grid-column: 1 / 9;
-        padding-left: 0;
-    }
-    .header__nav li{
-        padding:1px 3px;
-        font-size: 14px;
-    }
-    .cont-endoscopia{
-        display: inline;
-    }
-    .card-endoscopia{
-        width: 95%; 
-    }       
-    /*.centroDePagina-1{
-        grid-column: 12;
-    }*/
-    .footer__leyenda h6{
-        font-size: $letra-card;
-    }
-}
-@media screen and (min-width:768px){
-    .imagen-de-fondo img{
-        width: 350px;
-
-    }
-    .header__nav{
-        grid-column: 1 / 9;
-        padding-left: 0;
-    }
-    .header__nav li{
-        padding:1px 3px;
-        font-size: 16px;
-    }
-    .cont-endoscopia{
-        display: inline;
-    } 
-    .card-endoscopia{
-        width: 95%; 
-    }          
-    /*.centroDePagina-1{
-        grid-column: 1;
-    }*/
-    .centroDePagina-1 img{
-        width: 150px;
-    }
+    
 }

@@ -19,39 +19,19 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .header {
   width: 100%;
   height: auto;
-  display: grid;
-  grid-template-columns: repeat 8, 1fr;
 }
 
-.imagen-de-fondo {
+.imagen-de-header {
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.imagen-de-fondo img {
-  width: 350px;
-}
-
-/*.header__logo{
-    grid-column: 1 / 3;
-}
-.header__instituto{
-    grid-column: 5 / 8;
-    margin-left: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}*/
-.header__nav {
-  grid-column: 1/9;
-  padding-left: 10%;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #2E9990 100%);
+.imagen-de-header img {
+  width: 220px;
 }
 
 .header__nav li {
-  font-size: 1.1em;
-  /*background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);*/
+  font-size: 1em;
   text-align: center;
   color: rgb(5, 19, 5);
 }
@@ -60,18 +40,10 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   background-color: #def2f4;
 }
 
-.imagen-principal {
-  display: none;
-}
-
 .text-center {
   display: none;
 }
 
-/*.container-fluid{
-    display: grid;
-    grid-column: 60% 40%;
-}*/
 .izquierda {
   grid-column: 1;
 }
@@ -81,22 +53,44 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   margin-left: auto;
 }
 
-/*.centroDePagina-1{
-    display: grid;   
-    grid-column: 2 
-}*/
 .container {
   display: flex;
   flex-wrap: wrap;
+  gap: 1em;
+  text-decoration: none;
 }
 
 .item {
-  background-color: #2E9990;
+  margin-bottom: 30px;
+  padding: 3px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0, 8em;
+  -webkit-text-decoration-color: #0E554A;
+          text-decoration-color: #0E554A;
+  background: linear-gradient(to right, #DBDEDD, white);
   flex: 1 1 100px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 .IMEG-inicio {
   text-align: center;
+}
+
+.tarjeta1 {
+  margin: 20px;
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.IMEG-inicio h6 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+}
+
+h5 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
 }
 
 .cont-endoscopia {
@@ -105,21 +99,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   margin: 2em;
   padding: 2em;
   justify-content: space-around;
-}
-
-.card-endoscopia {
-  font-size: 1.1em;
-  background-color: linear-gradient(to right #0E554A 0%, #14665F 50%, #DBDEDD 100%);
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 45%;
-  padding: 15px;
-}
-.card-endoscopia h5 {
-  font-size: 1.1em;
-}
-.card-endoscopia p {
-  font-size: 0.9em;
 }
 
 .card-body h6 {
@@ -136,7 +115,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   background-color: #f3fbfa;
 }
 
-.bordes-detalles1, .item {
+.bordes-detalles1 {
   text-align: center;
   border-radius: 4px;
   border-bottom: #14665F 4px solid;
@@ -144,19 +123,17 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   margin-bottom: 2px;
 }
 
-.bordes-detalles2, .card-endoscopia {
+.bordes-detalles2 {
   text-align: center;
   border-bottom: #14665F 4px solid;
   border-right: #14665F 2px solid;
   margin-bottom: 2px;
 }
 
+/*efecto de fondo dinamico*/
 .background {
   width: 2rem;
   height: 100%;
-}
-
-.background {
   background: linear-gradient(45deg, #DBDEDD, #2E9990, #0E554A);
   -webkit-animation: hue-rotate 1s linear infinite alternate;
           animation: hue-rotate 1s linear infinite alternate;
@@ -197,7 +174,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   margin: 0px;
   position: fixed;
   right: -140px;
-  top: 200px;
+  top: 150px;
   width: 210px;
   z-index: 1000;
 }
@@ -257,139 +234,43 @@ footer {
 }
 
 /*responsive*/
-@media screen and (max-width: 375px) {
-  .imagen-de-fondo img {
-    width: 200px;
+@media screen and (max-width: 768px) {
+  .imagen-de-header h6 {
+    width: 190px;
   }
 
-  .header__instituto {
-    display: none;
+  .tarjeta1 {
+    margin: 5px;
+    padding: 10px 50px;
   }
 
-  .header__nav {
-    grid-column: 1/9;
-    padding-left: 0;
-  }
-
-  .header__nav li {
-    padding: 1px 3px;
-    font-size: 14px;
-  }
-
-  #carouselExampleCaptions {
-    display: none;
-  }
-
-  .cont-endoscopia {
-    display: inline;
-  }
-
-  .card-endoscopia {
-    width: 95%;
-  }
-
-  /*.centroDePagina-1{
-      grid-column: 12;
-  }*/
-  .footer__leyenda h6 {
+  .IMEG-inicio h6 {
     font-size: 0.7em;
   }
-}
-@media screen and (max-width: 425px) {
-  .imagen-de-fondo img {
-    width: 250px;
+
+  .footer {
+    margin-bottom: 0;
   }
 
-  .header__instituto {
-    display: none;
-  }
-
-  .header__nav {
-    grid-column: 1/9;
-    padding-left: 0;
-  }
-
-  .header__nav li {
-    padding: 1px 3px;
-    font-size: 14px;
-  }
-
-  #carouselExampleCaptions {
-    display: none;
-  }
-
-  .cont-endoscopia {
-    display: inline;
-  }
-
-  .card-endoscopia {
-    width: 95%;
-  }
-
-  /*.centroDePagina-1{
-      grid-column: 12;
-  }*/
   .footer__leyenda h6 {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 }
-@media screen and (min-width: 576px) {
-  .imagen-de-fondo img {
-    width: 280px;
+@media screen and (max-width: 600px) {
+  .imagen-de-header img {
+    width: 180px;
   }
 
-  .header__nav {
-    grid-column: 1/9;
-    padding-left: 0;
+  .tarjeta1 {
+    margin: 10px;
+    padding: 20px 50px;
   }
 
-  .header__nav li {
-    padding: 1px 3px;
-    font-size: 14px;
+  .footer {
+    margin-bottom: 0;
   }
 
-  .cont-endoscopia {
-    display: inline;
-  }
-
-  .card-endoscopia {
-    width: 95%;
-  }
-
-  /*.centroDePagina-1{
-      grid-column: 12;
-  }*/
   .footer__leyenda h6 {
-    font-size: 1.1em;
-  }
-}
-@media screen and (min-width: 768px) {
-  .imagen-de-fondo img {
-    width: 350px;
-  }
-
-  .header__nav {
-    grid-column: 1/9;
-    padding-left: 0;
-  }
-
-  .header__nav li {
-    padding: 1px 3px;
-    font-size: 16px;
-  }
-
-  .cont-endoscopia {
-    display: inline;
-  }
-
-  .card-endoscopia {
-    width: 95%;
-  }
-
-  /*.centroDePagina-1{
-      grid-column: 1;
-  }*/
-  .centroDePagina-1 img {
-    width: 150px;
+    font-size: 0.5rem;
   }
 }/*# sourceMappingURL=estilos.css.map */
