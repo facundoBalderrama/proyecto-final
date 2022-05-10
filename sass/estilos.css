@@ -156,6 +156,14 @@ h5 {
   background-color: #f3fbfa;
 }
 
+.construccion {
+  margin-bottom: 200px;
+  width: 250;
+  height: 150;
+  background-color: rgb(239, 176, 88);
+  text-align: center;
+}
+
 .bordes-detalles1 {
   text-align: center;
   border-radius: 4px;
