@@ -84,6 +84,28 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     text-decoration: none;
     border-radius: 5px;
 }
+.item-servicios-turnos{
+    background-color: #2E9990 ;
+    color:#e3f1f1;
+    height:50px;
+    width: 200px;
+    padding:5px;
+    margin:auto;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border-bottom:#14665F  4px solid;
+    border-right:#14665F 2px solid;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+    cursor:pointer;
+}
+.item-servicios-turnos a{
+    text-decoration:none;
+    color: rgb(242, 236, 236);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1em;
+}
 .IMEG-inicio{
     text-align: center;
 }
@@ -164,45 +186,38 @@ h5 {
 }
 /*menu superior derecho*/
 .menu-sup{
-    padding:0px;
+    padding:2px;
     margin:2px;
     position:fixed;
-    right:-50px;
-    top:2px;
-    width:150px;
+    right:50px;
+    top:10px;
+    width:auto;
     z-index: 1000;
 }
 .menu-sup-list li{
     list-style-type:none;
     background-color: #2E9990 ;
     color:#e3f1f1;
-    height:60px;
+    height:auto;
     padding:0px;
     margin:0px 0px 1px 0px;
-    border-radius: 5px;
-    -webkit-transition:all 0.25s ease-in-out;
-    -moz-transition:all 0.25s ease-in-out;
-    -o-transition:all 0.25s ease-in-out;
-    transition:all 0.25s ease-in-out;
+    border-radius: 3px;
+    border-bottom:#14665F  4px solid;
+    border-right:#14665F 2px solid;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
     cursor:pointer;
-}
-.menu-sup-list li:hover{
-    margin-left:-100px;
-}
-.menu-sup-list li img{
-    float:left;
-    margin:5px 4px;
-    margin-right:5px;
 }
 .menu-sup-list li h5{
     padding-top:5px;
     margin-left: 1px;
     line-height:16px;
-    font-size:12px;
+    font-size:16px;
 }
 .menu-sup-list li h5 a{
     text-decoration:none;
-    color: black;
+    color: rgb(242, 236, 236);
 }
 .menu-sup-list li h5 a:hover{
     text-decoration:underline;
@@ -270,6 +285,26 @@ footer{
     .imagen-de-header h6{
         width: 190px;
     }
+    .menu-sup{
+        padding:2px;
+        margin:2px;
+        position:fixed;
+        right:20px;
+        top:0px;
+        width:auto;
+        z-index: 1000;
+    }
+    .menu-sup-list li{
+        border-radius: 3px;
+        border-bottom:#14665F  2px solid;
+        border-right:#14665F 1px solid;
+    }
+    .menu-sup-list li h5{
+        padding-top:3px;
+        margin-left: 1px;
+        line-height:12px;
+        font-size:12px;
+    }
     .tarjeta1{
         margin: 5px;
         padding: 10px 50px;
@@ -310,7 +345,7 @@ footer{
         font-size: 0.8em;
     }
     .footer{
-        height: 10vh;
+        height: 8vh;
         margin-bottom: 0;
     }
     .footer__leyenda h6{
