@@ -44,15 +44,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   display: none;
 }
 
-.izquierda {
-  grid-column: 1;
-}
-
-.derecha {
-  grid-column: 2;
-  margin-left: auto;
-}
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -75,23 +66,21 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
   padding: 3px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0, 8em;
-  background: linear-gradient(to right, #DBDEDD, white);
+  border-bottom: #2E9990 solid 1px;
+  border-right: #2E9990 solid 1px;
   flex: 1 1 100px;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .item-servicios-turnos {
-  background-color: #2E9990;
-  color: #e3f1f1;
   height: 50px;
   width: 200px;
   padding: 5px;
+  border-bottom: #2E9990 solid 1px;
+  border-right: #2E9990 solid 1px;
   margin: auto;
   margin-bottom: 20px;
-  border-radius: 3px;
-  border-bottom: #14665F 4px solid;
-  border-right: #14665F 2px solid;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -100,9 +89,11 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 
 .item-servicios-turnos a {
   text-decoration: none;
-  color: rgb(242, 236, 236);
+  color: #0E554A;
+  text-shadow: #0E554A;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .IMEG-inicio {
@@ -308,7 +299,7 @@ h5 {
 /* fin de menu de redes sociales*/
 footer {
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   margin-bottom: 0;
   padding: 10px;
   background-color: #2E9990;
@@ -368,7 +359,7 @@ footer {
   }
 
   .footer {
-    height: 10vh;
+    height: 7vh;
     margin-bottom: 0;
   }
 
@@ -395,7 +386,7 @@ footer {
   }
 
   .footer {
-    height: 8vh;
+    height: 5vh;
     margin-bottom: 0;
   }
 
