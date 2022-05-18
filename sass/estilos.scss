@@ -67,6 +67,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .container1 img{
     width: 150px;
 }
+//pagina inicio
 .item{
     margin-bottom: 30px;
     padding: 3px;
@@ -79,7 +80,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     border-radius: 5px;
 }
 .item-servicios-turnos{
-    height:50px;
+    height:auto;
     width: 200px;
     padding:5px;
     border-bottom: #2E9990 solid 1px;
@@ -102,11 +103,6 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
 .IMEG-inicio{
     text-align: center;
 }
-.tarjeta1{
-    margin: 20px;
-    padding: 10px 50px;
-    text-align: center;
-}
 /*efecto zoom*/
 .zoom {
     transition: transform .2s; 
@@ -118,7 +114,7 @@ background-image: linear-gradient(135deg, #f5f7fa 0%, #c3e2dd 100%);FONDO  HEADE
     font-family: 'Times New Roman', Times, serif;
     font-size: 1em;
 }
-//modal endoscopia
+//modal endoscopia pagina endoscopia
 h5 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
@@ -136,18 +132,6 @@ h5 {
 .cons-btn{
     color: #0E554A;
 }
-.turnos{
-    width: 100%;
-    height: 400px;
-    background-color: #f3fbfa;
-}
-.construccion{
-    margin-bottom: 200px;
-    width: 250;
-    height: 150;
-    background-color: rgb(239, 176, 88);
-    text-align: center;
-}
 // bordes y detalles @extended//
 .bordes-detalles1{
     text-align: center;
@@ -162,15 +146,8 @@ h5 {
     border-right:#14665F 2px solid;
     margin-bottom: 2px;
 }
-/*efecto de fondo dinamico*/
-.background{
-    width: 2rem;
-    height: 100%;
-    background: linear-gradient(45deg, #DBDEDD, #2E9990, #0E554A);
-    animation: hue-rotate 1s linear infinite alternate;
-}
-@keyframes hue-rotate{
-    to{filter: hue-rotate(50deg);}
+.centro{
+    margin-bottom: 30px;
 }
 .tarjeta0{
     margin-top: 3px;
@@ -179,6 +156,18 @@ h5 {
     padding: 10px;
     text-align: center;
     margin-bottom: 10px;
+}
+.tarjeta1{
+    margin: 20px;
+    padding: 10px 50px;
+    text-align: center;
+}
+.tarjeta01{
+    border-radius: 5px;
+    border: red solid 2px;
+    margin: 20px 180px 100px 180px;
+    padding: 10px;
+    text-align: center;
 }
 .conte{
     width: 100%;
@@ -272,26 +261,22 @@ h5 {
 /* Importación de fuentes de google fonts */ 
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
 
-
 .formulario-contacto{
     height: 100%; 
     font-family: 'Noto Sans', sans-serif;
     background-color: #c3e2dd; 
     }
-
-
 .contact_form{  
     width: 460px; 
     height: auto;
-    margin: 80px auto;
+    margin: 15px auto;
+    border: #14665F solid 1px;
     border-radius: 10px;  
     padding-top: 30px;
     padding-bottom: 20px;  
     background-color: #fbfbfb; 
     padding-left: 30px; 
 }
-
-
 input{
     background-color: #fbfbfb; 
     width: 408px; 
@@ -304,8 +289,6 @@ input{
     padding-left: 10px;
     margin-bottom: 20px; 
 }
-
-
 textarea{
     background-color: #fbfbfb; 
     width: 405px; 
@@ -319,14 +302,10 @@ textarea{
     margin-bottom: 20px; 
     padding-top: 15px; 
 }
-
-
 label{
     display: block; 
     float: center;  
 }
-
-
 .button-form{
     height: 45px; 
     padding-left: 5px;
@@ -341,68 +320,46 @@ label{
     width: 420px;   
     cursor: pointer;
 }
-
-
 .button-form p{
     color: #fff; 
 }
-
-
 span{
     color: #2E9990; 
 }
-
-
 .aviso{
     font-size: 13px;  
     color: #0e0e0e;  
 }
-
-
 h1{
     font-size: 39px;  
     text-align: letf; 
     padding-bottom: 20px; 
     color: #0E554A;
 }
-
-
 h3{
     font-size: 16px; 
     padding-bottom: 30px;
     color: #0e0e0e;   
 }
-
-
 p{
     font-size: 14px; 
     color: #0e0e0e; 
 }
-
-
 ::-webkit-input-placeholder {
     color: #a8a8a8;
 }
-
-
 ::-webkit-textarea-placeholder {
     color: #a8a8a8;
 }
-
-
 .formulario input:focus{
     outline:0;
     border: 1px solid #97d848;
 }
-
-
 .formulario textarea:focus{
     outline:0;
     border: 1px solid #97d848;
 }
-
-
-/* creado por javiniguez.com, Julio 2019 */
+/* fin de formulario */
 footer{
     width: 100%;
     height: 18vh;
@@ -444,6 +401,9 @@ footer{
         margin: 5px;
         padding: 10px 50px;
     }
+    .tarjeta01{
+        margin: 20px 80px 80px 80px;
+    }
     .container1 img{
         width: 70px;
     }
@@ -469,6 +429,9 @@ footer{
     .tarjeta1{
         margin: 10px;
         padding: 20px 50px;
+    }
+    .tarjeta01{
+        margin: 20px 80px 80px 80px;
     }
     .container1 img{
         width: 50px;
